@@ -33,7 +33,7 @@ fig2 = px.histogram(df_orders, x="Category", y="Quantity", title="Category Quant
 app.layout = dbc.Container([
     dbc.Row([  # Row 1, logo image needs to be stored in the assets subfolder
         dbc.Col([
-            html.Img(src=app.get_asset_url('logo.png'), alt='MyLogo')
+            html.Img(src=app.get_asset_url('../assets/logo.png'), alt='MyLogo')
         ], width=2),
         # added date slider
         dbc.Col([
