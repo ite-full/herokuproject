@@ -21,6 +21,8 @@ df_orders["Sales"] = pd.to_numeric(df_orders["Sales"])
 
 # Use a boostrap theme SKETCHY
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.SKETCHY])
+# added for Heroku server
+server = app.server
 
 # Prepare the two charts using the dataframe prepared earlier
 fig1 = px.histogram(df_orders, x="Order Date", y='Sales', title='Sales by Order Date')
